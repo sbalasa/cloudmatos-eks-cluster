@@ -1,0 +1,102 @@
+{
+  "cluster_endpoint": {
+    "sensitive": false,
+    "type": "string",
+    "value": "https://45F98CDAA87612547E6319F26104AC4B.yl4.us-east-2.eks.amazonaws.com"
+  },
+  "cluster_id": {
+    "sensitive": false,
+    "type": "string",
+    "value": "education-eks-IgRf0yPR"
+  },
+  "cluster_name": {
+    "sensitive": false,
+    "type": "string",
+    "value": "education-eks-IgRf0yPR"
+  },
+  "cluster_security_group_id": {
+    "sensitive": false,
+    "type": "string",
+    "value": "sg-0fd98b638e3ca766f"
+  },
+  "config_map_aws_auth": {
+    "sensitive": false,
+    "type": [
+      "tuple",
+      [
+        [
+          "object",
+          {
+            "binary_data": [
+              "map",
+              "string"
+            ],
+            "data": [
+              "map",
+              "string"
+            ],
+            "id": "string",
+            "metadata": [
+              "list",
+              [
+                "object",
+                {
+                  "annotations": [
+                    "map",
+                    "string"
+                  ],
+                  "generate_name": "string",
+                  "generation": "number",
+                  "labels": [
+                    "map",
+                    "string"
+                  ],
+                  "name": "string",
+                  "namespace": "string",
+                  "resource_version": "string",
+                  "uid": "string"
+                }
+              ]
+            ]
+          }
+        ]
+      ]
+    ],
+    "value": [
+      {
+        "binary_data": null,
+        "data": {
+          "mapAccounts": "[]\n",
+          "mapRoles": "- \"groups\":\n  - \"system:bootstrappers\"\n  - \"system:nodes\"\n  \"rolearn\": \"arn:aws:iam::422158871611:role/education-eks-IgRf0yPR2022060119343993690000000e\"\n  \"username\": \"system:node:{{EC2PrivateDNSName}}\"\n",
+          "mapUsers": "[]\n"
+        },
+        "id": "kube-system/aws-auth",
+        "metadata": [
+          {
+            "annotations": null,
+            "generate_name": "",
+            "generation": 0,
+            "labels": {
+              "app.kubernetes.io/managed-by": "Terraform",
+              "terraform.io/module": "terraform-aws-modules.eks.aws"
+            },
+            "name": "aws-auth",
+            "namespace": "kube-system",
+            "resource_version": "795",
+            "uid": "98faecd4-70ad-4c59-93a6-a2fc3172dc32"
+          }
+        ]
+      }
+    ]
+  },
+  "kubectl_config": {
+    "sensitive": false,
+    "type": "string",
+    "value": "apiVersion: v1\npreferences: {}\nkind: Config\n\nclusters:\n- cluster:\n    server: https://45F98CDAA87612547E6319F26104AC4B.yl4.us-east-2.eks.amazonaws.com\n    certificate-authority-data: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUM1ekNDQWMrZ0F3SUJBZ0lCQURBTkJna3Foa2lHOXcwQkFRc0ZBREFWTVJNd0VRWURWUVFERXdwcmRXSmwKY201bGRHVnpNQjRYRFRJeU1EWXdNVEU1TXpBd00xb1hEVE15TURVeU9URTVNekF3TTFvd0ZURVRNQkVHQTFVRQpBeE1LYTNWaVpYSnVaWFJsY3pDQ0FTSXdEUVlKS29aSWh2Y05BUUVCQlFBRGdnRVBBRENDQVFvQ2dnRUJBUExqCkh3dFRhUHhmdFVPUUFPUi9Xd2RRQ2FEc25XL0g2eFJoZW5kTFJLS0g1RWVPUE8ra2ZsZVdYckNpYXU4eGhSd2YKdEJpSUVPTllHM0hEdDMvbHNYSDFTN2RXeHNvZzJXVmhCR2JMQ0hoa1N2cDQyK2tpU25YMnZLU3dybVJ5MHZrRQpxUGdxUTRvM3Y2T3dCWDZ1VnJqU1NxRndlR1VQYkdwc3V3dG5JS1FBL3ZicGZ4ZHdaNTIzbUN6bFpQTHUwdVlpCnIwWnNvckd3a3NoeXdGZWVpSm4vbFp0OXV3ZFRCdmQ4d290d2xlbzNFVkVBc2pqaEJaeXVnTlY5SzhZRG9rNkUKV3h1dkZEN2RsQkFUcXkyTy9LQ2NNV0FOQ3dyTUhHaFM5WjJaZlBxdHlWNVlnOXhQclBJMTVtVkwyRTRlSnhxdgpMajA0aWFjMjNydzd5SU8zT0lVQ0F3RUFBYU5DTUVBd0RnWURWUjBQQVFIL0JBUURBZ0trTUE4R0ExVWRFd0VCCi93UUZNQU1CQWY4d0hRWURWUjBPQkJZRUZKSk9IM0djNFJHWWhjMGN2Y3hYV2VJamdwZmdNQTBHQ1NxR1NJYjMKRFFFQkN3VUFBNElCQVFBSmdTRTJuSldZS3FicUhRVWpPczFXLzJRYnNuaDR4UzdyR1QyR3NUTnpaN2pUTnhBWgpka1N2OENFaGRsaGlvWkxnbDZUUVZmSVZMdUxzU1grVzJiSGoyZnd1YXNubjVseXUrZDFkT3VwcW1SWm9mTnFoCnB2bkpaRTV5YTVjbGJRcHR1RDFmaWYrdUdQc2s3Wml3WW1RYVZHMys5K20rMG13dVJ0L3E5WW5zQ0lJdVV1Q2wKSnVPUFpMZ0ZPbzRZeWxQb0ptN2Mwb1VCR0xQS3VGaTVKUzl5NCtzdnVVOGpnK29QNFZvRktVbHBXS1UrWmNrZwpReS8rbGFSUlpHMHZ5ZDZjZDN0Y05IM01zWDJiZzJSakM3aXM0akZjUEE2YU5SMHZEaXQvbWIxOGNSK3Y1SjlYCk1GdjYvR0tyR2ppQmorMXg3dkthR2dpNDBRS3QxYWZCWnlBWgotLS0tLUVORCBDRVJUSUZJQ0FURS0tLS0tCg==\n  name: eks_education-eks-IgRf0yPR\n\ncontexts:\n- context:\n    cluster: eks_education-eks-IgRf0yPR\n    user: eks_education-eks-IgRf0yPR\n  name: eks_education-eks-IgRf0yPR\n\ncurrent-context: eks_education-eks-IgRf0yPR\n\nusers:\n- name: eks_education-eks-IgRf0yPR\n  user:\n    exec:\n      apiVersion: client.authentication.k8s.io/v1alpha1\n      command: aws-iam-authenticator\n      args:\n        - \"token\"\n        - \"-i\"\n        - \"education-eks-IgRf0yPR\"\n"
+  },
+  "region": {
+    "sensitive": false,
+    "type": "string",
+    "value": "us-east-2"
+  }
+}
